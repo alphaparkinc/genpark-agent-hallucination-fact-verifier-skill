@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-hallucination-fact-verifier-skill",
+  "version": "1.0.0",
+  "description": "Atomic claim decomposition and cross-context fact verification engine detecting ungrounded claims, numerical contradictions, and hallucinated entities against reference knowledge.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "fact-checking",
+    "hallucination-detector",
+    "faithfulness-eval",
+    "facttool",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "extract_atomic_claims",
+      "description": "Decompose text paragraphs into atomic verifiable claims."
+    },
+    {
+      "name": "verify_claims_against_context",
+      "description": "Verify atomic claims against source ground truth context."
+    },
+    {
+      "name": "calculate_faithfulness_score",
+      "description": "Compute holistic faithfulness and hallucination risk ratio."
+    },
+    {
+      "name": "run_verification_benchmark",
+      "description": "Run hallucination and fact verification benchmark."
+    }
+  ]
+}
